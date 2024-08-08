@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.check {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.check::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 180%;
+  background-color: aqua;
+  transform: rotate(45deg);
+}
+.check:hover:before {
+  animation: projectOpen 5s linear infinite;
+}
+@keyframes projectOpen {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.check::after {
+  position: absolute;
+  content: "";
+  inset: 10px;
+  background-color: #110c29;
+  border-radius: 10px;
+}
+.ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.github-icon {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+  right: 12px;
+  padding: 4px;
+}
+
+li {
+  margin-top: 7px;
+}
+.project-arrow-left {
+  position: absolute;
+  right: 0;
+  margin-right: -10px;
+  margin-top: 20px;
+  background-color: #1a1534;
+  height: 20px;
+  width: 20px;
+  rotate: calc(45deg);
+}
+.project-arrow-right {
+  position: absolute;
+  left: 0;
+  margin-left: -10px;
+  margin-top: 20px;
+  background-color: #1a1534;
+  height: 20px;
+  width: 20px;
+  rotate: calc(45deg);
+}
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.icons img {
+  width: 60px;
+  z-index: 2;
+}
+.icons {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 80px;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 45px 0 0 45px;
+}
+.skill-title-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin: 0.5rem;
+}
