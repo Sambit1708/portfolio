@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.014f2229.css",
+    "main.js": "/portfolio/static/js/main.3959ecbd.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/freelancer.png": "/portfolio/static/media/freelancer.1c674130510eb8b397f9.png",
+    "static/media/eXamPortal.png": "/portfolio/static/media/eXamPortal.91de5d5f10bcb525e354.png",
+    "static/media/E-Commere.png": "/portfolio/static/media/E-Commere.aef187d99d1101067429.png",
+    "static/media/React.png": "/portfolio/static/media/React.8fa476a9a466108da157.png",
+    "static/media/mysql.png": "/portfolio/static/media/mysql.bdbd1eb709e4c13258d2.png",
+    "static/media/git1.png": "/portfolio/static/media/git1.985a7327fc7347ebdba0.png",
+    "static/media/java.png": "/portfolio/static/media/java.ddf8676bd569fe01ab44.png",
+    "static/media/sql.png": "/portfolio/static/media/sql.20cd8558cf457b0c28bb.png",
+    "static/media/jira-1.png": "/portfolio/static/media/jira-1.08d3740a6567ac7ed8ad.png",
+    "static/media/microservice.png": "/portfolio/static/media/microservice.d047ecc8881a752dd39f.png",
+    "static/media/Angular.png": "/portfolio/static/media/Angular.ef33a73358f4fc875e8c.png",
+    "static/media/aws.png": "/portfolio/static/media/aws.e51b24f41cc8719a5411.png",
+    "static/media/SpringBoot.png": "/portfolio/static/media/SpringBoot.953ee24309fa38748981.png",
+    "static/media/docker.png": "/portfolio/static/media/docker.c1f953a3ead577c05d04.png",
+    "static/media/css.png": "/portfolio/static/media/css.57ac229d6c624bed3295.png",
+    "static/media/highradius-logo.png": "/portfolio/static/media/highradius-logo.d34b9aa94fad2f313b46.png",
+    "static/media/Selenium.png": "/portfolio/static/media/Selenium.607765fd70148c6c3e0d.png",
+    "static/media/github.png": "/portfolio/static/media/github.ed1c06d925fff0b57e32.png",
+    "static/media/HTML.png": "/portfolio/static/media/HTML.6e930594286d8afe4c79.png",
+    "static/media/mockito-1.png": "/portfolio/static/media/mockito-1.5bae498f91ce339caa26.png",
+    "static/media/jira.png": "/portfolio/static/media/jira.41f43f0a54572f715426.png",
+    "static/media/typescript.png": "/portfolio/static/media/typescript.af108db04a54d784da9b.png",
+    "static/media/JUnit.png": "/portfolio/static/media/JUnit.c38b1625de0034b8e3e3.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/javascript-1.svg": "/portfolio/static/media/javascript-1.b879f838faf1cb951d1c2230fd933a39.svg",
+    "static/media/hibernate-icon.svg": "/portfolio/static/media/hibernate-icon.b60d22ea89273c1fb65ee77356d4b5a7.svg",
+    "main.014f2229.css.map": "/portfolio/static/css/main.014f2229.css.map",
+    "main.3959ecbd.js.map": "/portfolio/static/js/main.3959ecbd.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.014f2229.css",
+    "static/js/main.3959ecbd.js"
+  ]
+}
