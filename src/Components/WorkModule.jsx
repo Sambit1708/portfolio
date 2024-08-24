@@ -96,7 +96,7 @@ const WorkModule = () => {
             ></div>
             <div className=" m-auto grid place-items-center">
               {WorkList.map((item, index) => (
-                <div className={`${index !== 0 ? "mt-8" : ""}`}>
+                <div key={index} className={`${index !== 0 ? "mt-8" : ""}`}>
                   <div className="flex -ml-4">
                     <div className="mt-6  z-20">
                       <img

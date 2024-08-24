@@ -20,8 +20,8 @@ const ProjectModule = () => {
               <p className="text-3xl font-semibold tracking-wide">PROJECTS</p>
             </div>
             <div className="flex justify-between w-full">
-              {ProjectList.map((project) => (
-                <div>
+              {ProjectList.map((project, index) => (
+                <div key={index}>
                   <ProjectCard
                     key={project.id}
                     title={project.title}
@@ -48,7 +48,7 @@ const ProjectModule = () => {
             </div>
             <div className="flex justify-between flex-col">
               {ProjectList.map((project, index) => (
-                <div className={`${index !== 0 ? "mt-20" : ""}`}>
+                <div key={index} className={`${index !== 0 ? "mt-20" : ""}`}>
                   <ProjectCard
                     matches={matches}
                     key={project.id}
