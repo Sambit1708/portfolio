@@ -2,7 +2,7 @@ import aws from "./aws.png";
 import angular from "./Angular.png";
 import react from "./React.png";
 import java from "./java.png";
-import spring from "./SpringBoot.png"; // Make sure this matches the exact filename
+import spring from "./SpringBoot.png";
 import microservice from "./microservice.png";
 import hibernate from "./hibernate-icon.svg";
 import sql from "./sql.png";
@@ -21,6 +21,7 @@ import github from "./github.png";
 import jira from "./jira-1.png";
 import docker from "./docker.png";
 import tailwind from "./tailwind.png";
+import mongodb from "./mongodb.png";
 
 export {
   java,
@@ -46,4 +47,5 @@ export {
   aws,
   docker,
   tailwind,
+  mongodb,
 };

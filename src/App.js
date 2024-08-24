@@ -9,6 +9,8 @@ const App = () => {
     <Box
       sx={{
         bgcolor: "#030714",
+        maxWidth: "1400px",
+        width: "100%",
         color: "#fff",
         p: "50px",
         fontFamily: "Poppins, sans-serif",

@@ -30,6 +30,7 @@ import {
   aws,
   docker,
   tailwind,
+  mongodb,
 } from "../Assets/Icons";
 
 export const ProjectList = [
@@ -273,5 +274,10 @@ export const SkillList = [
     id: 23,
     title: "Tailwind",
     image: tailwind,
+  },
+  {
+    id: 24,
+    title: "MongoDB",
+    image: mongodb,
   },
 ];

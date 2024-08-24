@@ -12,14 +12,17 @@ const defaultOptions = {
   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
 };
 
-export const ProjectCard = ({ title, description, image, tags }) => {
+export const ProjectCard = (props) => {
+  const { title, description, image, tags, matches } = props;
   return (
     <div>
       <Tilt
         options={defaultOptions}
         style={{
-          height: 350,
-          width: 280,
+          maxHeight: matches === undefined ? 350 : 600,
+          maxWidth: matches === undefined ? 280 : 400,
+          width: "100%",
+          height: "100%",
           backgroundColor: "#110C29",
           borderRadius: "10px",
           cursor: "pointer",
@@ -41,11 +44,14 @@ export const ProjectCard = ({ title, description, image, tags }) => {
               <img
                 src={image}
                 alt="P"
-                style={{ width: 260, height: 160 }}
+                style={{
+                  width: matches === undefined ? 260 : 380,
+                  height: matches === undefined ? 160 : 250,
+                }}
                 className="rounded-2xl"
               />
             </div>
-            <div className="h-44 p-2">
+            <div className="p-2 pt-5 pb-7">
               <div className="">
                 <p className="text-base font-medium">{title}</p>
               </div>
@@ -101,6 +107,7 @@ export const ExperienceCard = ({
   company,
   arrowClass,
   description,
+  date,
 }) => {
   return (
     <div>
@@ -113,7 +120,7 @@ export const ExperienceCard = ({
         }}
       >
         <div
-          className="border-b-2 border-b-white"
+          className="border-b-2 border-b-white rounded-xl"
           style={{
             backgroundColor: "#1A1534",
             maxWidth: "370px",
@@ -124,7 +131,8 @@ export const ExperienceCard = ({
             <div className={`${arrowClass}`}></div>
             <div>
               <p className="text-lg font-semibold">{designation}</p>
-              <p className="text-gray-400">{company}</p>
+              <p className="text-sm text-gray-400">{company}</p>
+              {date && <p className="text-gray-400 text-xs mt-1">{date}</p>}
               <div className="pl-4 pt-2">
                 <ul
                   className="list-disc leading-4 text-gray-200"
@@ -145,7 +153,7 @@ export const ExperienceCard = ({
 
 export const SkillComponent = ({ title, image }) => {
   return (
-    <div className="w-36 flex justify-center">
+    <div className="w-36">
       <Tilt
         options={defaultOptions}
         style={{

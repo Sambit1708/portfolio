@@ -85,7 +85,7 @@ li {
   margin-bottom: 0.5rem;
 }
 .icons img {
-  width: 60px;
+  max-width: 60px;
   z-index: 2;
 }
 .icons {
