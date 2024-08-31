@@ -57,6 +57,8 @@ export const ProjectList = [
         color: "text-green-500",
       },
     ],
+    frontendURL: "",
+    backendURL: "",
   },
   {
     id: 2,
@@ -81,6 +83,8 @@ export const ProjectList = [
         color: "text-green-500",
       },
     ],
+    frontendURL: "https://github.com/Sambit1708/e_commerce-reactjs",
+    backendURL: "https://github.com/Sambit1708/examportal-springboot",
   },
   {
     id: 3,
@@ -105,6 +109,8 @@ export const ProjectList = [
         color: "text-green-500",
       },
     ],
+    frontendURL: "https://github.com/Sambit1708/examportal-reactjs",
+    backendURL: "https://github.com/Sambit1708/examportal-springboot",
   },
 ];
 
@@ -114,6 +120,7 @@ export const WorkList = [
     designation: "Full Stack Developer Trainee",
     company: "Pankaj Sir Academy",
     companyLogo: pankaj,
+    companyURL: "https://pankajsiracademy.in",
     duration: "Dec 2023 - Jun 2024",
     arrowClass: "project-arrow-left",
     description: [
@@ -130,6 +137,7 @@ export const WorkList = [
     designation: "Java Developer Intern",
     company: "TSinfo Technologies PVT LTD",
     companyLogo: tsinfo,
+    companyURL: "https://www.tsinfotechnologies.com",
     duration: "Jun 2023 - Dec 2023",
     arrowClass: "project-arrow-right",
     description: [
@@ -147,6 +155,7 @@ export const WorkList = [
     designation: "Software Developer Intern",
     company: "Highradius Technologies",
     companyLogo: highradius,
+    companyURL: "https://www.highradius.com",
     duration: "Jun 2022 - May 2023",
     arrowClass: "project-arrow-left",
     description: [

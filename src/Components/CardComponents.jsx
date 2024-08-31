@@ -1,4 +1,5 @@
 import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -15,7 +16,15 @@ const defaultOptions = {
 export const ProjectCard = (props) => {
   const { title, description, image, tags, matches } = props;
   return (
-    <div>
+    <motion.div
+      whileInView={{
+        scale: 1.1, // Move right by 100 pixels and return to original position
+        transition: {
+          duration: 0.6, // Slows down the entire animation to 2 seconds
+          ease: "easeInOut", // Adds a smooth, natural acceleration and deceleration
+        },
+      }}
+    >
       <Tilt
         options={defaultOptions}
         style={{
@@ -35,6 +44,13 @@ export const ProjectCard = (props) => {
           >
             <div className="rounded-2xl relative">
               <div className="github-icon">
+                <img
+                  src={require("../Assets/github.png")}
+                  alt="g"
+                  width="20px"
+                />
+              </div>
+              <div className="github-icon mt-8">
                 <img
                   src={require("../Assets/github.png")}
                   alt="g"
@@ -79,7 +95,7 @@ export const ProjectCard = (props) => {
           </div>
         </div>
       </Tilt>
-    </div>
+    </motion.div>
   );
 };
 
@@ -110,7 +126,15 @@ export const ExperienceCard = ({
   date,
 }) => {
   return (
-    <div>
+    <motion.div
+      whileInView={{
+        scale: 1.1, // Move right by 100 pixels and return to original position
+        transition: {
+          duration: 0.6, // Slows down the entire animation to 2 seconds
+          ease: "easeInOut", // Adds a smooth, natural acceleration and deceleration
+        },
+      }}
+    >
       <Tilt
         options={defaultOptions}
         style={{
@@ -123,8 +147,8 @@ export const ExperienceCard = ({
           className="border-b-2 border-b-white rounded-xl"
           style={{
             backgroundColor: "#1A1534",
-            maxWidth: "370px",
-            minHeight: "300px",
+            maxWidth: "360px",
+            minHeight: "290px",
           }}
         >
           <div className="p-4 text-white relative">
@@ -147,13 +171,23 @@ export const ExperienceCard = ({
           </div>
         </div>
       </Tilt>
-    </div>
+    </motion.div>
   );
 };
 
 export const SkillComponent = ({ title, image }) => {
   return (
-    <div className="w-36">
+    <motion.div
+      initial={{ scale: 0.8 }}
+      whileInView={{
+        scale: 1, // Enlarges the element when it enters the viewport
+        transition: {
+          duration: 0.5, // Slows down the entire animation to 2 seconds
+          ease: "easeInOut", // Adds a smooth, natural acceleration and deceleration
+        },
+      }}
+      className="w-36"
+    >
       <Tilt
         options={defaultOptions}
         style={{
@@ -172,6 +206,6 @@ export const SkillComponent = ({ title, image }) => {
           </div>
         </div>
       </Tilt>
-    </div>
+    </motion.div>
   );
 };
